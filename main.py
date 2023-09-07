@@ -15,6 +15,8 @@ def ceaser_cipher(direction,text,shift):
         if(new_position<0):
           new_position+=26
       new_text.append(alphabet[new_position])
+    else:
+      new_text.append(text[i])
   print(''.join(new_text))
 
 print(logo)
